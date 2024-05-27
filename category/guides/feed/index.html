@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Guides Archives - Zento</title>
+	<atom:link href="https://themes.estudiopatagon.com/wordpress/zento/category/guides/feed/" rel="self" type="application/rss+xml" />
+	<link>https://themes.estudiopatagon.com/wordpress/zento/category/guides/</link>
+	<description>Thoughts, stories and ideas.</description>
+	<lastBuildDate>Wed, 27 Mar 2024 14:52:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5</generator>
+	<item>
+		<title>Crafting Engaging CSS Animations step by step guide</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/text-only/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/text-only/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Fri, 19 Jan 2024 21:45:00 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Guides]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=5</guid>
+
+					<description><![CDATA[<p>In the realm of technology blogging, captivating your audience goes beyond just the written word. Incorporating eye-catching CSS animations can elevate your content and provide...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/text-only/">Crafting Engaging CSS Animations step by step guide</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In the realm of technology blogging, captivating your audience goes beyond just the written word. Incorporating eye-catching CSS animations can elevate your content and provide a dynamic user experience. In this tutorial, we&#8217;ll explore the art of creating CSS animations to add flair and interactivity to your technology blog.</p>
+
+
+
+<h3 class="wp-block-heading" id="prerequisites">Prerequisites</h3>
+
+
+
+<p>Before we dive into the world of CSS animations, ensure the following:</p>
+
+
+
+<ol>
+<li><strong>Basic HTML and CSS Knowledge:</strong> Familiarize yourself with the fundamentals of HTML and CSS.</li>
+
+
+
+<li><strong>Access to Your Blog&#8217;s Stylesheet:</strong> Make sure you can modify your blog&#8217;s CSS stylesheet.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="step-1-planning-your-animation">Step 1: Planning Your Animation</h3>
+
+
+
+<p>Before writing any code, sketch out the type of animation you want. Consider the mood and tone of your blog, ensuring the animation complements your content.</p>
+
+
+
+<h3 class="wp-block-heading" id="step-2-setting-up-your-html">Step 2: Setting Up Your HTML</h3>
+
+
+
+<p>In your blog post or webpage, identify the element you want to animate. Add a class to this element for easy targeting in your CSS.</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;div class="animated-element"&gt;
+  Your content here...
+&lt;/div&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-3-writing-the-css-animation">Step 3: Writing the CSS Animation</h3>
+
+
+
+<p>Open your blog&#8217;s CSS stylesheet and add the following code:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+}</code></pre>
+
+
+
+<p>This example creates a simple fade-in animation with a slight upward movement. Feel free to experiment with different properties like <code>opacity</code>, <code>transform</code>, and <code>transition</code> to achieve the desired effect.</p>
+
+
+
+<h3 class="wp-block-heading" id="step-4-triggering-the-animation-with-javascript-optional">Step 4: Triggering the Animation with JavaScript (Optional)</h3>
+
+
+
+<p>If you want the animation to occur on a specific event, like when the user scrolls to the element, you can use JavaScript. Add the following script to your blog:</p>
+
+
+
+<pre class="wp-block-code lang-js"><code>&lt;script&gt;
+  document.addEventListener('DOMContentLoaded', function () {
+    var animatedElement = document.querySelector('.animated-element');
+
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return rect.top &lt; window.innerHeight;
+    }
+
+    function handleScroll() {
+      if (isInViewport(animatedElement)) {
+        animatedElement.classList.add('show');
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check on page load
+  });
+&lt;/script&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-5-preview-and-publish">Step 5: Preview and Publish</h3>
+
+
+
+<p>Preview your blog post to see the CSS animation in action. Tweak the animation properties as needed to achieve the desired look and feel. Once satisfied, publish your post and let your readers enjoy the visually enhanced content.</p>
+
+
+
+<h3 class="wp-block-heading" id="conclusion">Conclusion</h3>
+
+
+
+<p>By incorporating CSS animations into your technology blog, you add a layer of engagement that captivates your audience. Experiment with different animations and effects to find the perfect fit for your blog&#8217;s style. Elevate your content and make a lasting impression with the power of CSS animations.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/text-only/">Crafting Engaging CSS Animations step by step guide</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/text-only/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Creating your first web page in pure HTML 🎉</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:20:08 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Guides]]></category>
+		<category><![CDATA[HTML]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=11</guid>
+
+					<description><![CDATA[<p>In our previous HTML example, we aimed to provide you with a quick overview to get you started. However, we need to delve deeper into...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/">Creating your first web page in pure HTML 🎉</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In our previous HTML example, we aimed to provide you with a quick overview to get you started. However, we need to delve deeper into the essential elements of a proper HTML file to ensure clarity and correctness.</p>
+
+
+
+<h3 class="wp-block-heading" id="lets-revisit-we-wrote-initially">Let&#8217;s revisit we wrote initially</h3>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;p&gt;A paragraph of text&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+
+
+<p>While this allowed us to create a functional HTML page, it lacked some fundamental elements necessary for a well-formed HTML document. Consider the following improved version:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;A paragraph of text&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;First item&lt;/li&gt;
+      &lt;li&gt;Second item&lt;/li&gt;
+      &lt;li&gt;Third item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="now-lets-break-down-the-key-components">Now, let&#8217;s break down the key components</h3>
+
+
+
+<ul>
+<li><strong><code>&lt;!DOCTYPE html&gt;</code></strong>: This declaration, placed at the top, signals to the browser that the document is an HTML file.</li>
+
+
+
+<li><code><strong>&lt;html&gt;</strong></code>: The root element that wraps the entire HTML document. Inside it, you&#8217;ll find the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections.</li>
+
+
+
+<li><strong><code>&lt;head&gt;</code></strong>: This section contains meta-information about the document, such as the title, character set, linked stylesheets, and more. In this example, it&#8217;s left empty for simplicity.</li>
+
+
+
+<li><strong><code>&lt;body&gt;</code></strong>: The container for the visible elements of the page. It encompasses the content you want to display, including paragraphs, lists, images, and more.</li>
+</ul>
+
+
+
+<p>It&#8217;s crucial to note that an HTML document should have only one occurrence of the <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, and <code>&lt;head&gt;</code> elements.</p>
+
+
+
+<p>Additionally, notice the indentation used in this example. Each nested tag, such as <code>&lt;head&gt;</code> inside <code>&lt;html&gt;</code> or <code>&lt;ul&gt;</code> inside <code>&lt;body&gt;</code>, is indented for clarity. Indentation helps maintain a &#8220;tree structure,&#8221; making it easier to visually parse and understand the hierarchy of elements in an HTML file.</p>
+
+
+
+<p>Whether you prefer a 2-character or 4-character indentation (or tabs), consistency is key to ensuring a clean and organized HTML structure. Adopting a systematic approach will greatly enhance your ability to navigate and modify HTML files effectively.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/">Creating your first web page in pure HTML 🎉</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Introduction to HTML 📖</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/introduction-to-html/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/introduction-to-html/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:14:04 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Guides]]></category>
+		<category><![CDATA[HTML]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=10</guid>
+
+					<description><![CDATA[<p>HTML, or Hyper Text Markup Language, is the fundamental building block of the World Wide Web. In the early days of the internet, HTML files...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/introduction-to-html/">Introduction to HTML 📖</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>HTML, or Hyper Text Markup Language, is the fundamental building block of the World Wide Web. In the early days of the internet, HTML files served as the backbone of web content, stored on centralized servers and accessed by browsers to display information.</p>
+
+
+
+<p>Despite its importance, HTML is not a programming language; instead, it is a markup language structured using tags. When creating a basic HTML file, it is conventionally saved with the .html file extension.</p>
+
+
+
+<p>In essence, an <strong>HTML file contains textual content</strong>, such as paragraphs or titles, organized with markup that instructs the browser on how to present the content to the user.</p>
+
+
+
+<h3 class="wp-block-heading" id="simple-example">Simple example</h3>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;p&gt;A paragraph of text&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+
+
+<p>This HTML snippet says that&nbsp;<code>A paragraph of text</code>&nbsp;is a&nbsp;<strong>paragraph</strong>. And then we have a&nbsp;<strong>list</strong>&nbsp;of 3 items.</p>
+
+
+
+<p><code>p</code>&nbsp;stands for&nbsp;<em>paragraph</em>,&nbsp;<code>ul</code>&nbsp;stands for&nbsp;<em>unordered list</em>, and&nbsp;<code>li</code>&nbsp;stands for&nbsp;<em>list item</em>.</p>
+
+
+
+<p>For each of them, we have an&nbsp;<strong>opening tag</strong>&nbsp;(like&nbsp;<code>&lt;p&gt;</code>), the content, and a&nbsp;<strong>closing tag</strong>&nbsp;(like&nbsp;<code>&lt;/p&gt;</code>).</p>
+
+
+
+<p>So&nbsp;<code>&lt;opening tag&gt;</code>&nbsp;…content …&nbsp;<code>&lt;/closing tag&gt;</code>.</p>
+
+
+
+<h3 class="wp-block-heading" id="definition">Definition</h3>
+
+
+
+<p>Now I want to tell you something about HTML you should know.</p>
+
+
+
+<p>HTML is not&nbsp;<em>presentational</em>. It’s not concerned with how things&nbsp;<em>look</em>.</p>
+
+
+
+<p>Instead, it’s concerned with what things&nbsp;<strong>mean</strong>.</p>
+
+
+
+<p>You don’t tell “make this paragraph red” in HTML.</p>
+
+
+
+<p>That’s a&nbsp;<strong>presentational aspect</strong>.</p>
+
+
+
+<h3 class="wp-block-heading" id="conclusion">Conclusion</h3>
+
+
+
+<p>HTML is just concerned with content.</p>
+
+
+
+<p>It just adds some predefined styles here and there, like for example with the list. But that’s it. There’s no customization you can do on how it looks, in HTML.</p>
+
+
+
+<p>This will be the job of CSS, but that’s a story for another lesson.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/introduction-to-html/">Introduction to HTML 📖</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/introduction-to-html/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>JavaScript Basics: Literals, Identifiers, and Variables</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/javascript-basics-literals-identifiers-and-variables/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/javascript-basics-literals-identifiers-and-variables/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Tue, 16 Jan 2024 00:36:00 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Guides]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=22</guid>
+
+					<description><![CDATA[<p>Literals Definition: A literal is a value that is directly written in the source code. It can be a simple value like a number, string,...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/javascript-basics-literals-identifiers-and-variables/">JavaScript Basics: Literals, Identifiers, and Variables</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h3 class="wp-block-heading" id="literals">Literals</h3>
+
+
+
+<p><strong>Definition:</strong> A literal is a value that is directly written in the source code. It can be a simple value like a number, string, boolean, or more complex constructs like Object Literals or Array Literals.</p>
+
+
+
+<p><strong>Examples:</strong></p>
+
+
+
+<pre class="wp-block-code lang-javascript"><code>5
+'Test'
+true
+&#91;'a', 'b']
+{ color: 'red', shape: 'Rectangle' }
+</code></pre>
+
+
+
+<p><strong>Key Point:</strong> Literals are the fundamental units of JavaScript, representing simple or complex values directly within the code.</p>
+
+
+
+<h3 class="wp-block-heading" id="identifiers">Identifiers</h3>
+
+
+
+<p><strong>Definition:</strong> An identifier is a sequence of characters used to identify a variable, function, or object in JavaScript. It can start with a letter, the dollar sign <code>$</code>, or an underscore <code>_</code>, and may contain digits.</p>
+
+
+
+<p><strong>Examples:</strong></p>
+
+
+
+<pre class="wp-block-code lang-javascript"><code>5
+'Test'
+true
+&#91;'a', 'b']
+{ color: 'red', shape: 'Rectangle' }
+</code></pre>
+
+
+
+<p><strong>Usage of Dollar Sign:</strong> The dollar sign is commonly used to reference DOM elements in JavaScript.</p>
+
+
+
+<p><strong>Note:</strong> Some names are reserved for JavaScript internal use and cannot be used as identifiers.</p>
+
+
+
+<h3 class="wp-block-heading" id="variables">Variables</h3>
+
+
+
+<p><strong>Definition:</strong> A variable is a reference to a value. It allows us to store and later access that value through a given name. JavaScript is loosely typed, allowing flexibility in variable usage.</p>
+
+
+
+<p><strong>Declaration:</strong></p>
+
+
+
+<pre class="wp-block-code lang-javascript"><code>// Using const (for constants)
+const a = 0;
+
+// Using let (for mutable variables)
+let b = 'Hello';
+
+// Using var (older way, less commonly used today)
+var c = true;
+</code></pre>
+
+
+
+<p><strong>Case Sensitivity:</strong> Identifiers in JavaScript are case-sensitive.</p>
+
+
+
+<p><strong>Key Point:</strong> Variables provide a way to store and manage values, offering flexibility through different declaration keywords (<code>const</code>, <code>let</code>, <code>var</code>).</p>
+
+
+
+<p>Understanding these fundamental concepts sets the groundwork for further exploration into JavaScript programming. As we progress, we&#8217;ll delve into more advanced constructs and practices. Stay tuned for more insights into JavaScript development!</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/javascript-basics-literals-identifiers-and-variables/">JavaScript Basics: Literals, Identifiers, and Variables</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/javascript-basics-literals-identifiers-and-variables/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Final steps to Deploy on Netlify</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/netlify-deploy-to-netlify/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/netlify-deploy-to-netlify/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Wed, 10 Jan 2024 03:29:00 +0000</pubDate>
+				<category><![CDATA[Deployment]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=24</guid>
+
+					<description><![CDATA[<p>It looks like you&#8217;ve successfully deployed your site to Netlify, and you&#8217;re ready to make and deploy changes. That&#8217;s fantastic! The automated deployment process with...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/netlify-deploy-to-netlify/">Final steps to Deploy on Netlify</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>It looks like you&#8217;ve successfully deployed your site to Netlify, and you&#8217;re ready to make and deploy changes. That&#8217;s fantastic! The automated deployment process with Netlify indeed streamlines the workflow.</p>
+
+
+
+<p>Here&#8217;s a summary of the steps you&#8217;ve taken:</p>
+
+
+
+<h3 class="wp-block-heading" id="authorize-netlify-on-github"><strong>Authorize Netlify on GitHub:</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="961" src="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-1-1024x961.png" alt="" class="wp-image-79" srcset="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-1-1024x961.png 1024w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-1-300x281.png 300w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-1-768x720.png 768w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-1-1536x1441.png 1536w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-1-2048x1921.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><span style="white-space: pre-wrap;">Select import method</span></figcaption></figure>
+
+
+
+<ol>
+<li>Clicked on &#8220;Import from Git&#8221; on Netlify.</li>
+
+
+
+<li>Chose GitHub and authorized Netlify to access GitHub repositories.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="select-repository-and-deploy"><strong>Select Repository and Deploy:</strong></h3>
+
+
+
+<ol>
+<li>Picked the GitHub repository you want to deploy.</li>
+
+
+
+<li>Clicked &#8220;Deploy site&#8221; on Netlify.</li>
+</ol>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="961" src="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-1024x961.png" alt="" class="wp-image-80" srcset="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-1024x961.png 1024w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-300x281.png 300w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-768x720.png 768w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-1536x1441.png 1536w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-2048x1921.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><span style="white-space: pre-wrap;">Allow Access</span></figcaption></figure>
+
+
+
+<h3 class="wp-block-heading" id="monitor-deployment"><strong>Monitor Deployment:</strong></h3>
+
+
+
+<ol>
+<li>Netlify proceeded to deploy the site using the code from the GitHub repo.</li>
+
+
+
+<li>You monitored the deployment progress on Netlify.</li>
+</ol>
+
+
+
+<p><strong>View Live Site:</strong></p>
+
+
+
+<ol>
+<li>The site was successfully deployed on a .netlify.app domain.</li>
+
+
+
+<li>You viewed your live site on the provided domain.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="automatic-redeployment"><strong>Automatic Redeployment:</strong></h3>
+
+
+
+<ol>
+<li>Netlify automatically detected the change and redeployed the site.</li>
+
+
+
+<li>You saw the changes live on the .netlify.app domain.</li>
+</ol>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="780" src="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-1024x780.png" alt="" class="wp-image-81" srcset="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-1024x780.png 1024w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-300x229.png 300w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-768x585.png 768w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-1536x1170.png 1536w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-2048x1560.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><span style="white-space: pre-wrap;">Import from Github</span></figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="additional-tips"><strong>Additional Tips:</strong></h2>
+
+
+
+<ul>
+<li><strong>Custom Domain:</strong> Consider buying and assigning a custom domain if your project becomes more serious. Netlify allows easy integration with custom domains.</li>
+
+
+
+<li><strong>Automated Deployment:</strong> The beauty of this setup is the automatic deployment. Every time you make changes, commit, and push to GitHub, Netlify takes care of deploying the updates.</li>
+
+
+
+<li><strong>Productivity Boost:</strong> This automated deployment process enhances productivity by eliminating manual deployment steps.</li>
+</ul>
+
+
+
+<p>Congratulations on successfully <strong>deploying your site</strong>! If you have any further questions or if there&#8217;s anything else you&#8217;d like to explore, feel free to ask. Happy coding!</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/netlify-deploy-to-netlify/">Final steps to Deploy on Netlify</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/netlify-deploy-to-netlify/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Getting Started with Netlify Deployment</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/getting-started-with-netlify-deployment/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/getting-started-with-netlify-deployment/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Wed, 10 Jan 2024 03:23:00 +0000</pubDate>
+				<category><![CDATA[Deployment]]></category>
+		<category><![CDATA[Guides]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=23</guid>
+
+					<description><![CDATA[<p>Introduction to Netlify Netlify is a powerful deployment platform known for its speed, reliability, and seamless integration with version control systems like GitHub. It supports...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/getting-started-with-netlify-deployment/">Getting Started with Netlify Deployment</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h3 class="wp-block-heading" id="introduction-to-netlify">Introduction to Netlify</h3>
+
+
+
+<p>Netlify is a powerful deployment platform known for its speed, reliability, and seamless integration with version control systems like GitHub. It supports hosting static files, static site generators, and serverless functions.</p>
+
+
+
+<h3 class="wp-block-heading" id="create-a-netlify-account">Create a Netlify Account</h3>
+
+
+
+<ol>
+<li>Visit <a href="https://www.netlify.com/">Netlify</a>.</li>
+
+
+
+<li>Click on &#8220;Sign Up&#8221; to create a new account.</li>
+
+
+
+<li>You can sign up using your GitHub account or provide the required information to create a new Netlify account.</li>
+</ol>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="961" src="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-1024x961.png" alt="" class="wp-image-80" srcset="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-1024x961.png 1024w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-300x281.png 300w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-768x720.png 768w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-1536x1441.png 1536w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-3-2048x1921.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><span style="white-space: pre-wrap;">Import from GIT</span></figcaption></figure>
+
+
+
+<h3 class="wp-block-heading" id="connect-github-to-netlify">Connect GitHub to Netlify</h3>
+
+
+
+<ol>
+<li>After creating an account, log in to your Netlify dashboard.</li>
+
+
+
+<li>Click on the &#8220;New site from Git&#8221; button.</li>
+
+
+
+<li>Choose GitHub as the continuous deployment source.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="deploy-a-github-repo-on-netlify">Deploy a GitHub Repo on Netlify</h3>
+
+
+
+<ol>
+<li>Select the repository you want to deploy.</li>
+
+
+
+<li>Configure your build settings. For a simple HTML site, the default settings should work.</li>
+
+
+
+<li>Click on the &#8220;Deploy site&#8221; button.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="make-a-local-change-and-deploy">Make a Local Change and Deploy</h3>
+
+
+
+<ol>
+<li>Clone your GitHub repository to your local machine.</li>
+
+
+
+<li>Make changes to your HTML files or any other assets.</li>
+
+
+
+<li>Commit and push the changes to your GitHub repository.</li>
+
+
+
+<li>Netlify will automatically detect the changes and redeploy your site.</li>
+</ol>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="780" src="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-1024x780.png" alt="" class="wp-image-81" srcset="https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-1024x780.png 1024w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-300x229.png 300w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-768x585.png 768w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-1536x1170.png 1536w, https://themes.estudiopatagon.com/wordpress/zento/wp-content/uploads/2024/01/deploy-2-2048x1560.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><span style="white-space: pre-wrap;">Allow Netlify Permissions</span></figcaption></figure>
+
+
+
+<h3 class="wp-block-heading" id="view-the-deployment">View the Deployment</h3>
+
+
+
+<ol>
+<li>Go back to your Netlify dashboard.</li>
+
+
+
+<li>You&#8217;ll see a new deployment triggered by your recent push.</li>
+
+
+
+<li>Once the deployment is complete, you can visit the provided Netlify URL to view your live site.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="additional-tips">Additional Tips</h3>
+
+
+
+<ul>
+<li>Netlify provides features like <strong>custom domains</strong>, <strong>serverless functions</strong>, and more. Explore the settings in your <strong>Netlify dashboard </strong>to customize your deployment.</li>
+
+
+
+<li>For advanced projects, you can explore static site generators like <strong>Hugo </strong>or <strong>Gatsby </strong>and leverage Netlify&#8217;s features for a seamless deployment pipeline.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>By following these steps, you&#8217;ll be able to <strong>deploy </strong>and <strong>update </strong>your website with ease using Netlify. Feel free to explore more features offered by <strong>Netlify </strong>to enhance your web development workflow. Happy coding!</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/getting-started-with-netlify-deployment/">Getting Started with Netlify Deployment</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/getting-started-with-netlify-deployment/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

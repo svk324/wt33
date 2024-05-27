@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CSS Archives - Zento</title>
+	<atom:link href="https://themes.estudiopatagon.com/wordpress/zento/category/3-css/feed/" rel="self" type="application/rss+xml" />
+	<link>https://themes.estudiopatagon.com/wordpress/zento/category/3-css/</link>
+	<description>Thoughts, stories and ideas.</description>
+	<lastBuildDate>Wed, 27 Mar 2024 14:52:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5</generator>
+	<item>
+		<title>Crafting Engaging CSS Animations step by step guide</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/text-only/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/text-only/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Fri, 19 Jan 2024 21:45:00 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Guides]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=5</guid>
+
+					<description><![CDATA[<p>In the realm of technology blogging, captivating your audience goes beyond just the written word. Incorporating eye-catching CSS animations can elevate your content and provide...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/text-only/">Crafting Engaging CSS Animations step by step guide</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In the realm of technology blogging, captivating your audience goes beyond just the written word. Incorporating eye-catching CSS animations can elevate your content and provide a dynamic user experience. In this tutorial, we&#8217;ll explore the art of creating CSS animations to add flair and interactivity to your technology blog.</p>
+
+
+
+<h3 class="wp-block-heading" id="prerequisites">Prerequisites</h3>
+
+
+
+<p>Before we dive into the world of CSS animations, ensure the following:</p>
+
+
+
+<ol>
+<li><strong>Basic HTML and CSS Knowledge:</strong> Familiarize yourself with the fundamentals of HTML and CSS.</li>
+
+
+
+<li><strong>Access to Your Blog&#8217;s Stylesheet:</strong> Make sure you can modify your blog&#8217;s CSS stylesheet.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="step-1-planning-your-animation">Step 1: Planning Your Animation</h3>
+
+
+
+<p>Before writing any code, sketch out the type of animation you want. Consider the mood and tone of your blog, ensuring the animation complements your content.</p>
+
+
+
+<h3 class="wp-block-heading" id="step-2-setting-up-your-html">Step 2: Setting Up Your HTML</h3>
+
+
+
+<p>In your blog post or webpage, identify the element you want to animate. Add a class to this element for easy targeting in your CSS.</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;div class="animated-element"&gt;
+  Your content here...
+&lt;/div&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-3-writing-the-css-animation">Step 3: Writing the CSS Animation</h3>
+
+
+
+<p>Open your blog&#8217;s CSS stylesheet and add the following code:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+}</code></pre>
+
+
+
+<p>This example creates a simple fade-in animation with a slight upward movement. Feel free to experiment with different properties like <code>opacity</code>, <code>transform</code>, and <code>transition</code> to achieve the desired effect.</p>
+
+
+
+<h3 class="wp-block-heading" id="step-4-triggering-the-animation-with-javascript-optional">Step 4: Triggering the Animation with JavaScript (Optional)</h3>
+
+
+
+<p>If you want the animation to occur on a specific event, like when the user scrolls to the element, you can use JavaScript. Add the following script to your blog:</p>
+
+
+
+<pre class="wp-block-code lang-js"><code>&lt;script&gt;
+  document.addEventListener('DOMContentLoaded', function () {
+    var animatedElement = document.querySelector('.animated-element');
+
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return rect.top &lt; window.innerHeight;
+    }
+
+    function handleScroll() {
+      if (isInViewport(animatedElement)) {
+        animatedElement.classList.add('show');
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check on page load
+  });
+&lt;/script&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-5-preview-and-publish">Step 5: Preview and Publish</h3>
+
+
+
+<p>Preview your blog post to see the CSS animation in action. Tweak the animation properties as needed to achieve the desired look and feel. Once satisfied, publish your post and let your readers enjoy the visually enhanced content.</p>
+
+
+
+<h3 class="wp-block-heading" id="conclusion">Conclusion</h3>
+
+
+
+<p>By incorporating CSS animations into your technology blog, you add a layer of engagement that captivates your audience. Experiment with different animations and effects to find the perfect fit for your blog&#8217;s style. Elevate your content and make a lasting impression with the power of CSS animations.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/text-only/">Crafting Engaging CSS Animations step by step guide</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/text-only/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS Selectors: Class and ID basic filtering for HTML elements</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/advanced-css-selectors-class-and-id/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/advanced-css-selectors-class-and-id/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Wed, 17 Jan 2024 00:04:00 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[HTML]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=21</guid>
+
+					<description><![CDATA[<p>We’ve seen the basics of selectors.CSS selectors offer versatile ways to target specific HTML elements for styling. While we&#8217;ve covered basic tag selectors, let&#8217;s delve...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/advanced-css-selectors-class-and-id/">CSS Selectors: Class and ID basic filtering for HTML elements</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>We’ve seen the basics of selectors.CSS selectors offer versatile ways to target specific HTML elements for styling. While we&#8217;ve covered basic tag selectors, let&#8217;s delve into class and id selectors, showcasing their syntax and usage.</p>
+
+
+
+<h3 class="wp-block-heading" id="class-selectors">Class Selectors</h3>
+
+
+
+<p>To target elements with a specific class, use the class selector syntax: <code>.class {}</code>. Here&#8217;s an example:</p>
+
+
+
+<p>HTML:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;p class="dog-name"&gt;Roger&lt;/p&gt;
+</code></pre>
+
+
+
+<p>CSS:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>.dog-name {
+  color: yellow;
+}
+</code></pre>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;p class="dog-name"&gt;Roger&lt;/p&gt;
+</code></pre>
+
+
+
+<h4 class="wp-block-heading" id="repeating-classes-vs-unique-ids">Repeating Classes vs. Unique IDs</h4>
+
+
+
+<ul>
+<li><strong>Repeating Classes:</strong> You can repeat the same class value across multiple elements within an HTML document. For example, several elements can share the class &#8220;dog-name.&#8221;</li>
+
+
+
+<li><strong>Unique IDs:</strong> An id must be unique within an HTML document. It can only be used once. For instance, an id like &#8220;dog-name&#8221; should be assigned to a single element.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="id-selectors">ID Selectors</h3>
+
+
+
+<p>To target elements with a specific id, use the id selector syntax: <code>#id {}</code>. Here&#8217;s an example:</p>
+
+
+
+<p>HTML:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;p id="dog-name"&gt;Roger&lt;/p&gt;
+</code></pre>
+
+
+
+<p>CSS:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>#dog-name {
+  color: yellow;
+}
+</code></pre>
+
+
+
+<p>Understanding the nuances of class and id selectors provides you with powerful tools for styling specific elements or groups of elements within your <strong>HTML </strong>documents. As you progress, you&#8217;ll discover more advanced selectors and techniques to enhance your <strong>CSS styling capabilities</strong>. Stay tuned for further exploration into the world of CSS.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/advanced-css-selectors-class-and-id/">CSS Selectors: Class and ID basic filtering for HTML elements</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/advanced-css-selectors-class-and-id/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Introduction to CSS 🚀</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/css-basics/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/css-basics/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Tue, 16 Jan 2024 20:00:00 +0000</pubDate>
+				<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Fundamentals]]></category>
+		<category><![CDATA[HTML]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=20</guid>
+
+					<description><![CDATA[<p>So far we’ve worked with HTML alone. While HTML forms the backbone of web content, the need for customization and visual appeal leads us to...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/css-basics/">Introduction to CSS 🚀</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>So far we’ve worked with HTML alone.</p>
+
+
+
+<p>While HTML forms the backbone of web content, the need for customization and visual appeal leads us to Cascading Style Sheets (CSS). CSS is a web standard designed for styling HTML elements, allowing us to control the presentation and layout of our web pages.</p>
+
+
+
+<h3 class="wp-block-heading" id="css-rule-example">CSS Rule Example</h3>
+
+
+
+<p>Here&#8217;s a basic example of a CSS rule that styles paragraph tags:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>p {
+  color: red;
+}
+</code></pre>
+
+
+
+<ul>
+<li><strong>Selector (<code>p</code>):</strong> Identifies the HTML element to which the styling rules will be applied.</li>
+
+
+
+<li><strong>Declaration Block (<code>{ color: red; }</code>):</strong> Contains one or more declarations. Each declaration comprises a property (<code>color</code>) and its corresponding value (<code>red</code>).</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="applying-css">Applying CSS</h3>
+
+
+
+<p>CSS can be applied in various ways:</p>
+
+
+
+<h4 class="wp-block-heading" id="1-inline-style">1. Inline Style</h4>
+
+
+
+<pre class="wp-block-code lang-css"><code>&lt;p style="color: red;"&gt;This is a red paragraph.&lt;/p&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading" id="2-internal-style-within-html-document">2. Internal Style (Within HTML Document)</h4>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;head&gt;
+  &lt;style&gt;
+    p {
+      color: red;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+
+
+
+<h4 class="wp-block-heading" id="3-external-style-in-separate-css-file">3. External Style (In Separate CSS File)</h4>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;head&gt;
+  &lt;link href="style.css" rel="stylesheet" /&gt;
+&lt;/head&gt;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="multiple-css-rules">Multiple CSS Rules</h3>
+
+
+
+<p>You can list multiple CSS rules to apply different styles to various elements:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>p {
+  color: red;
+}
+
+a {
+  color: blue;
+}
+</code></pre>
+
+
+
+<p>A selector can target one or more items:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>p, a {
+  color: red;
+}
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="selectors-and-spacing">Selectors and Spacing</h3>
+
+
+
+<p>Selectors can target one or more items, and spacing is insignificant in CSS:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>p,a {
+  color: red;}
+</code></pre>
+
+
+
+<pre class="wp-block-code lang-css"><code>p,a {              color: red;
+         }
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="best-practices">Best Practices</h3>
+
+
+
+<ul>
+<li>Each declaration in the declaration block should end with a semicolon (<code>;</code>).</li>
+
+
+
+<li>Proper indentation and spacing enhance readability but are not required by the browser.</li>
+</ul>
+
+
+
+<p>Understanding these fundamental concepts equips you to enhance the visual aspects of your HTML documents using CSS. As you delve deeper, you&#8217;ll discover the versatility and power CSS brings to web development. Stay tuned for more insights into advanced CSS techniques and best practices.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/css-basics/">Introduction to CSS 🚀</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/css-basics/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

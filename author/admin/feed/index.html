@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Jonathan Doe, Author at Zento</title>
+	<atom:link href="https://themes.estudiopatagon.com/wordpress/zento/author/admin/feed/" rel="self" type="application/rss+xml" />
+	<link>https://themes.estudiopatagon.com/wordpress/zento/author/admin/</link>
+	<description>Thoughts, stories and ideas.</description>
+	<lastBuildDate>Wed, 27 Mar 2024 14:51:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5</generator>
+	<item>
+		<title>Crafting Engaging CSS Animations step by step guide</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/text-only/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/text-only/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Fri, 19 Jan 2024 21:45:00 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Guides]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=5</guid>
+
+					<description><![CDATA[<p>In the realm of technology blogging, captivating your audience goes beyond just the written word. Incorporating eye-catching CSS animations can elevate your content and provide...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/text-only/">Crafting Engaging CSS Animations step by step guide</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In the realm of technology blogging, captivating your audience goes beyond just the written word. Incorporating eye-catching CSS animations can elevate your content and provide a dynamic user experience. In this tutorial, we&#8217;ll explore the art of creating CSS animations to add flair and interactivity to your technology blog.</p>
+
+
+
+<h3 class="wp-block-heading" id="prerequisites">Prerequisites</h3>
+
+
+
+<p>Before we dive into the world of CSS animations, ensure the following:</p>
+
+
+
+<ol>
+<li><strong>Basic HTML and CSS Knowledge:</strong> Familiarize yourself with the fundamentals of HTML and CSS.</li>
+
+
+
+<li><strong>Access to Your Blog&#8217;s Stylesheet:</strong> Make sure you can modify your blog&#8217;s CSS stylesheet.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="step-1-planning-your-animation">Step 1: Planning Your Animation</h3>
+
+
+
+<p>Before writing any code, sketch out the type of animation you want. Consider the mood and tone of your blog, ensuring the animation complements your content.</p>
+
+
+
+<h3 class="wp-block-heading" id="step-2-setting-up-your-html">Step 2: Setting Up Your HTML</h3>
+
+
+
+<p>In your blog post or webpage, identify the element you want to animate. Add a class to this element for easy targeting in your CSS.</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;div class="animated-element"&gt;
+  Your content here...
+&lt;/div&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-3-writing-the-css-animation">Step 3: Writing the CSS Animation</h3>
+
+
+
+<p>Open your blog&#8217;s CSS stylesheet and add the following code:</p>
+
+
+
+<pre class="wp-block-code lang-css"><code>body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+}</code></pre>
+
+
+
+<p>This example creates a simple fade-in animation with a slight upward movement. Feel free to experiment with different properties like <code>opacity</code>, <code>transform</code>, and <code>transition</code> to achieve the desired effect.</p>
+
+
+
+<h3 class="wp-block-heading" id="step-4-triggering-the-animation-with-javascript-optional">Step 4: Triggering the Animation with JavaScript (Optional)</h3>
+
+
+
+<p>If you want the animation to occur on a specific event, like when the user scrolls to the element, you can use JavaScript. Add the following script to your blog:</p>
+
+
+
+<pre class="wp-block-code lang-js"><code>&lt;script&gt;
+  document.addEventListener('DOMContentLoaded', function () {
+    var animatedElement = document.querySelector('.animated-element');
+
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return rect.top &lt; window.innerHeight;
+    }
+
+    function handleScroll() {
+      if (isInViewport(animatedElement)) {
+        animatedElement.classList.add('show');
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check on page load
+  });
+&lt;/script&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-5-preview-and-publish">Step 5: Preview and Publish</h3>
+
+
+
+<p>Preview your blog post to see the CSS animation in action. Tweak the animation properties as needed to achieve the desired look and feel. Once satisfied, publish your post and let your readers enjoy the visually enhanced content.</p>
+
+
+
+<h3 class="wp-block-heading" id="conclusion">Conclusion</h3>
+
+
+
+<p>By incorporating CSS animations into your technology blog, you add a layer of engagement that captivates your audience. Experiment with different animations and effects to find the perfect fit for your blog&#8217;s style. Elevate your content and make a lasting impression with the power of CSS animations.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/text-only/">Crafting Engaging CSS Animations step by step guide</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/text-only/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Understanding how Links and protocols works 🚀</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/vertical/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/vertical/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:40:54 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Fundamentals]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=15</guid>
+
+					<description><![CDATA[<p>Within a web browser, the ability to move from one document to another is facilitated by links. These links consist of two main parts: the...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/vertical/">Understanding how Links and protocols works 🚀</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Within a web browser, the ability to move from one document to another is facilitated by links. These links consist of two main parts: the protocol and server address, followed by the document path.</p>
+
+
+
+<h3 class="wp-block-heading" id="anatomy-of-a-link">Anatomy of a Link</h3>
+
+
+
+<p>A link is essentially composed of two distinct segments. The <strong>first part</strong> determines the <strong>protocol </strong>and server address, which can be specified either through a <strong>domain name</strong> or an <strong>IP address</strong>. The <strong>second part</strong> represents the document path appended to the address. For instance, consider the following document address:</p>
+
+
+
+<code>https://estudiopatagon.com/contact/</code>
+
+
+
+<p></p>
+
+
+
+<p><strong>Breaking it down:</strong></p>
+
+
+
+<ul>
+<li><strong>Protocol (https):</strong> Specifies the communication protocol to be used. In this case, it&#8217;s HyperText Transfer Protocol Secure, denoted by &#8220;https.&#8221;</li>
+
+
+
+<li><strong>Domain Name (estudiopatagon.com):</strong> Identifies the server&#8217;s location using a human-readable domain name. It points to the server that hosts the website.</li>
+
+
+
+<li><strong>Document URL (/contact/):</strong> Represents the specific path of the document relative to the server&#8217;s root path. It guides the server to the exact location of the requested content.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="the-role-of-the-web-server">The Role of the Web Server</h3>
+
+
+
+<p>Once a link is clicked, the web browser sends a request to the specified server using the provided protocol, domain name, and document path. The web server, in turn, is responsible for interpreting this request.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Once identified, the server serves the file as the response, allowing the browser to render and display the content.</p>
+</blockquote>
+
+
+
+<p>The server analyzes the request, extracts the document path, and searches its directory structure for the corresponding file.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://images.unsplash.com/photo-1577648188599-291bb8b831c3?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM4M3x8Y29kZXxlbnwwfHx8fDE3MDc1OTE4NjZ8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000" alt="computer screen displaying files"/><figcaption class="wp-element-caption"><span style="white-space: pre-wrap;">Photo by </span><a href="https://unsplash.com/@flowforfrank"><span style="white-space: pre-wrap;">Ferenc Almasi</span></a><span style="white-space: pre-wrap;"> / </span><a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit"><span style="white-space: pre-wrap;">Unsplash</span></a></figcaption></figure>
+
+
+
+<h3 class="wp-block-heading" id="conclusion">Conclusion</h3>
+
+
+
+<p>In essence, the web server acts as the interpreter and provider, ensuring that the correct response is delivered based on the user&#8217;s request. This seamless interaction between the browser and the server is fundamental to the functionality of the World Wide Web.</p>
+
+
+
+<p>As we continue our exploration, we&#8217;ll delve deeper into the intricacies of web development, understanding how links, protocols, and servers collaborate to deliver the web content we interact with daily.</p>
+
+
+
+<p><em>Stay tuned for a deeper dive into the mechanics of web navigation and document retrieval.</em></p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/vertical/">Understanding how Links and protocols works 🚀</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/vertical/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Unleashing the Power of JavaScript: multiple event techniques</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/classic/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/classic/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:40:00 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[HTML]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=9</guid>
+
+					<description><![CDATA[<p>Incorporating dynamic and interactive elements into your content can significantly elevate the user experience. In this tutorial, we&#8217;ll explore the fascinating world of JavaScript, covering...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/classic/">Unleashing the Power of JavaScript: multiple event techniques</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Incorporating dynamic and interactive elements into your content can significantly elevate the user experience. In this tutorial, we&#8217;ll explore the fascinating world of JavaScript, covering essential techniques to enhance your technology blog.</p>
+
+
+
+<h3 class="wp-block-heading" id="prerequisites">Prerequisites</h3>
+
+
+
+<p>Before diving into JavaScript, ensure the following:</p>
+
+
+
+<ol>
+<li><strong>Text Editor:</strong> Have a reliable text editor, such as Visual Studio Code or Sublime Text, installed on your computer.</li>
+
+
+
+<li><strong>Understanding of HTML and CSS:</strong> Familiarize yourself with the basics of HTML and CSS, as JavaScript often works in tandem with these technologies.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="step-1-including-javascript-in-your-html">Step 1: Including JavaScript in Your HTML</h3>
+
+
+
+<p>Start by adding JavaScript to your HTML document. Place the script tag just before the closing body tag for better performance:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Your Tech Blog Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;!-- Your content goes here --&gt;
+
+  &lt;script src="app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-2-basic-javascript-functions">Step 2: Basic JavaScript Functions</h3>
+
+
+
+<p>Create a simple JavaScript file (e.g., <code>app.js</code>) to include basic functions. Let&#8217;s start with a function that displays a message:</p>
+
+
+
+<pre class="wp-block-code lang-javascript"><code>// app.js
+function showMessage() {
+  alert('Welcome to your tech blog! 🚀');
+}
+
+showMessage(); // Call the function</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-3-dom-manipulation">Step 3: DOM Manipulation</h3>
+
+
+
+<p>JavaScript shines in manipulating the Document Object Model (DOM). Update HTML content dynamically:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;div id="dynamic-content"&gt;This content can change&lt;/div&gt;</code></pre>
+
+
+
+<pre class="wp-block-code lang-javascript"><code>// app.js
+function updateContent() {
+  var element = document.getElementById('dynamic-content');
+  element.innerHTML = 'New dynamic content!';
+}
+
+updateContent(); // Call the function</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-4-event-handling">Step 4: Event Handling</h3>
+
+
+
+<p>Enhance user interaction by handling events. Let&#8217;s make a button that changes the content when clicked:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;button onclick="updateContent()"&gt;Change Content&lt;/button&gt;</code></pre>
+
+
+
+<pre class="wp-block-code lang-javascript"><code>// app.js
+function updateContent() {
+  var element = document.getElementById('dynamic-content');
+  element.innerHTML = 'New content after button click!';
+}
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-5-asynchronous-javascript-ajax">Step 5: Asynchronous JavaScript (AJAX)</h3>
+
+
+
+<p>Fetch data asynchronously from a server to keep your blog dynamic:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;div id="async-content"&gt;This content will be replaced&lt;/div&gt;
+&lt;button onclick="fetchData()"&gt;Fetch Data&lt;/button&gt;</code></pre>
+
+
+
+<pre class="wp-block-code lang-javascript"><code>// app.js
+function fetchData() {
+  var element = document.getElementById('async-content');
+  fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response =&gt; response.json())
+    .then(data =&gt; {
+      element.innerHTML = 'Fetched Data: ' + data.title;
+    });
+}
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="conclusion">Conclusion</h3>
+
+
+
+<p>JavaScript empowers you to create a dynamic and interactive technology blog. From basic functions to DOM manipulation and asynchronous operations, the possibilities are vast. Experiment with these techniques, and watch as your blog becomes a captivating hub for tech enthusiasts. Stay tuned for more JavaScript adventures on your blogging journey!</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/classic/">Unleashing the Power of JavaScript: multiple event techniques</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/classic/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP, Web Browsers, and Web Servers</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/nosidebar/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/nosidebar/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:35:37 +0000</pubDate>
+				<category><![CDATA[Fundamentals]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=14</guid>
+
+					<description><![CDATA[<p>At the core of the internet lies a complex yet fascinating ecosystem known as the World Wide Web. To unravel its workings, we need to...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/nosidebar/">HTTP, Web Browsers, and Web Servers</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>At the core of the internet lies a complex yet fascinating ecosystem known as the World Wide Web. To unravel its workings, we need to explore key concepts such as HTTP, web browsers, and web servers.</p>
+
+
+
+<h3 class="wp-block-heading" id="the-internet-as-infrastructure">The Internet as Infrastructure</h3>
+
+
+
+<p>Think of the internet as a vast phone network infrastructure, with numerous interconnected devices, each assigned a unique identifier, much like a phone number. But what makes the internet truly powerful is its applications, and over time, various attempts have been made to explore its potential.</p>
+
+
+
+<p>Early internet endeavors, like email and Usenet newsgroups, made their mark, but it was the World Wide Web that truly revolutionized our online experiences.</p>
+
+
+
+<h3 class="wp-block-heading" id="the-birth-of-the-world-wide-web">The Birth of the World Wide Web</h3>
+
+
+
+<p>The inception of the World Wide Web can be credited to Sir Tim Berners-Lee, a visionary based in Switzerland. Back in the early days, he conceptualized a utility to visualize and interlink research papers. Little did he know that this idea would evolve into the World Wide Web we know today.</p>
+
+
+
+<p>Working at CERN in Geneva, Berners-Lee introduced the concept of &#8220;hyperlinks.&#8221; This innovative idea involved linking documents together, allowing users to navigate seamlessly between them. His creation was initially an academic tool, but its impact was far-reaching.</p>
+
+
+
+<h3 class="wp-block-heading" id="http-the-communication-protocol">HTTP: The Communication Protocol</h3>
+
+
+
+<p>At the heart of the web&#8217;s functionality is HTTP, or Hyper Text Transfer Protocol. This protocol, operating on top of TCP (Transmission Control Protocol), dictates how web browsers communicate with web servers and vice versa. It sets the rules for the exchange of information between these entities.</p>
+
+
+
+<h3 class="wp-block-heading" id="web-servers-and-web-browsers">Web Servers and Web Browsers</h3>
+
+
+
+<p>In the web ecosystem, two primary players come into play: the Web Server and the Web Browser. The Web Server, typically hosted remotely, serves web pages to clients, which are the Web Browsers. The interaction between these components is governed by the rules established by HTTP.</p>
+
+
+
+<p>Imagine the Web Server as a repository of web pages, and the Web Browser as the tool that fetches and displays these pages for users. The communication between them is akin to a conversation following the rules of the HTTP protocol.</p>
+
+
+
+<h3 class="wp-block-heading" id="html-the-language-of-web-pages">HTML: The Language of Web Pages</h3>
+
+
+
+<p>Web pages, the visual entities we interact with, are essentially text files encoded in HTML, or Hyper Text Markup Language. HTML provides the structure and format for web content, defining elements like paragraphs, headings, images, and more.</p>
+
+
+
+<p>As we journey further into understanding the web, we&#8217;ll delve into HTML and explore how these text files become the immersive web pages we encounter daily. Stay tuned as we bridge the gap between theory and practical implementation in the realm of HTML.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/nosidebar/">HTTP, Web Browsers, and Web Servers</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/nosidebar/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mastering HTML Essentials to start your Tech Blog 🔥</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/mastering-html-essentials-for-your-tech-blog/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/mastering-html-essentials-for-your-tech-blog/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:33:00 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[HTML]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=8</guid>
+
+					<description><![CDATA[<p>As a technology blogger, having a strong foundation in HTML is fundamental for crafting engaging and well-structured content. In this tutorial, we&#8217;ll delve into the...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/mastering-html-essentials-for-your-tech-blog/">Mastering HTML Essentials to start your Tech Blog 🔥</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>As a technology blogger, having a strong foundation in HTML is fundamental for crafting engaging and well-structured content. In this tutorial, we&#8217;ll delve into the key HTML elements and techniques that will empower you to create compelling and accessible posts on your technology blog.</p>
+
+
+
+<h3 class="wp-block-heading" id="prerequisites">Prerequisites</h3>
+
+
+
+<p>Before we embark on this HTML journey, ensure the following:</p>
+
+
+
+<ol>
+<li><strong>Text Editor:</strong> Have a reliable text editor, such as Visual Studio Code or Sublime Text, installed on your computer.</li>
+
+
+
+<li><strong>Basic Understanding of Web Technologies:</strong> Familiarize yourself with the basics of web technologies, including how HTML works alongside CSS and JavaScript.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading" id="step-1-setting-up-your-html-document">Step 1: Setting Up Your HTML Document</h3>
+
+
+
+<p>Create a new HTML document and set up the basic structure. Every HTML document should include the following:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Your Tech Blog Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;!-- Your content goes here --&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="step-2-structuring-content-with-html-tags">Step 2: Structuring Content with HTML Tags</h3>
+
+
+
+<p>HTML provides a variety of tags to structure your content. Here are some essential ones:</p>
+
+
+
+<ul>
+<li><strong>Headings:</strong></li>
+</ul>
+
+
+
+<pre class="wp-block-code lang-html"><code>  &lt;h1&gt;Your Main Heading&lt;/h1&gt;
+  &lt;h2&gt;Subheading&lt;/h2&gt;</code></pre>
+
+
+
+<ul>
+<li><strong>Paragraphs:</strong></li>
+</ul>
+
+
+
+<pre class="wp-block-code lang-html"><code>  &lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+
+
+
+<ul>
+<li><strong>Lists:</strong></li>
+</ul>
+
+
+
+<pre class="wp-block-code lang-html"><code>  &lt;ul>
+    &lt;li>Item 1&lt;/li>
+    &lt;li>Item 2&lt;/li>
+  &lt;/ul>
+
+  &lt;ol>
+    &lt;li>Step 1&lt;/li>
+    &lt;li>Step 2&lt;/li>
+  &lt;/ol></code></pre>
+
+
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/mastering-html-essentials-for-your-tech-blog/">Mastering HTML Essentials to start your Tech Blog 🔥</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/mastering-html-essentials-for-your-tech-blog/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Displaying Images in HTML: The img tag a masterclass</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/vertical-nosidebar/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/vertical-nosidebar/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:32:43 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[HTML]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=13</guid>
+
+					<description><![CDATA[<p>Images play a crucial role in enhancing the visual appeal of a website, and in HTML, the img tag is the key to incorporating images...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/vertical-nosidebar/">Displaying Images in HTML: The img tag a masterclass</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Images play a crucial role in enhancing the visual appeal of a website, and in HTML, the <code>img</code> tag is the key to incorporating images into your web pages. This tag is straightforward yet powerful, allowing you to seamlessly integrate images into your content.</p>
+
+
+
+<h3 class="wp-block-heading" id="the-img-tag-basics">The <code>&lt;img&gt;</code> Tag Basics</h3>
+
+
+
+<p>The <code>&lt;img&gt;</code> tag is a self-closing tag, which means it ends with <code>/&gt;</code>. It does not contain any content but rather serves as a self-sustaining element. Here&#8217;s a simple example:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;img src="image.png" /&gt;
+</code></pre>
+
+
+
+<p>In this example, the <code>src</code> attribute specifies the image source. You can replace <code>"image.png"</code> with the actual file path or URL of your image.</p>
+
+
+
+<h3 class="wp-block-heading" id="image-formats-and-alt-attribute">Image Formats and Alt Attribute</h3>
+
+
+
+<p>On the web, a diverse range of image formats is used, including PNG, JPEG, GIF, SVG, and the more recent WebP. When using the <code>&lt;img&gt;</code> tag, it&#8217;s important to include the <code>alt</code> attribute, as per HTML standards. The <code>alt</code> attribute provides a descriptive text for the image, aiding screen readers and search engine bots:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;img src="dog.png" alt="A picture of a dog" /&gt;
+</code></pre>
+
+
+
+<p>Ensure that the <code>alt</code> attribute provides a meaningful description of the image, contributing to accessibility and search engine optimization.</p>
+
+
+
+<h3 class="wp-block-heading" id="controlling-image-size-with-width-and-height-attributes">Controlling Image Size with Width and Height Attributes</h3>
+
+
+
+<p>You can control the dimensions of the displayed image using the <code>width</code> and <code>height</code> attributes. These attributes take numeric values expressed in pixels. This is particularly useful to reserve space for the image, preventing layout changes when the image is fully loaded:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;img src="dog.png" alt="A picture of a dog" width="300" height="200" /&gt;</code></pre>
+
+
+
+<p>In this example, the <code>width</code> is set to 300 pixels, and the <code>height</code> is set to 200 pixels. Adjust these values according to your design preferences and layout requirements.</p>
+
+
+
+<p>Integrating images with the <code>&lt;img&gt;</code> tag is a fundamental skill in web development. As you continue to explore HTML and enhance your web pages, mastering the art of incorporating images will contribute significantly to the overall user experience of your website.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/vertical-nosidebar/">Displaying Images in HTML: The img tag a masterclass</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/vertical-nosidebar/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Unveiling the Web Browser: Gateway to the World Wide Web</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/fullwidth/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/fullwidth/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:30:00 +0000</pubDate>
+				<category><![CDATA[Fundamentals]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=16</guid>
+
+					<description><![CDATA[<p>Before delving into the intricacies of HTML and CSS, it&#8217;s essential to pause and ponder a fundamental question: What is a browser? In the digital...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/fullwidth/">Unveiling the Web Browser: Gateway to the World Wide Web</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Before delving into the intricacies of HTML and CSS, it&#8217;s essential to pause and ponder a fundamental question: What is a browser?</p>
+
+
+
+<p>In the digital landscape, a browser serves as the gateway to the vast expanse of the World Wide Web. Whether you&#8217;re using Chrome, Firefox, Edge, Safari, Brave, or any other, the browser is the tool through which you interact with the wealth of information and services available online.</p>
+
+
+
+<h2 class="wp-block-heading" id="multiple-browsers-same-principles">Multiple Browsers, Same Principles</h2>
+
+
+
+<p>The intriguing aspect lies in the fact that despite having numerous browsers, they all operate on similar principles. Chrome, Firefox, and others may have distinct features and appearances, but their core functionality remains consistent. This uniformity is attributed to the foundational concept that the Web is built on standards.</p>
+
+
+
+<h2 class="wp-block-heading" id="the-power-of-open-standards">The Power of Open Standards</h2>
+
+
+
+<p>The Web, with its HTTP protocol, HTML, and associated technologies, is an open ecosystem. This openness means that anyone can participate, contribute, and even create their own browser. It&#8217;s comparable to the open nature of Linux, where enthusiasts can craft their own distributions.</p>
+
+
+
+<ul>
+<li>While creating a browser might be a formidable task, the openness of the Web allows for such possibilities.</li>
+
+
+
+<li>This stands in contrast to closed platforms, like the operating system running on an iPhone, where creating a custom operating system is not feasible.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="the-browser-in-action">The Browser in Action</h2>
+
+
+
+<p>Here is where the magic flows, let&#8217;s detail the 2 most important aspects of every web browser:</p>
+
+
+
+<h3 class="wp-block-heading" id="how-web-browsers-works">How web browsers works</h3>
+
+
+
+<p>Every browser, whether on your computer or phone, shares a familiar interface. They enable you to enter a URL, the address of a resource on the Web, initiating the journey to retrieve information. Despite the diversity of browsers, the commonality in their appearance and functionality stems from adhering to open standards.</p>
+
+
+
+<h3 class="wp-block-heading" id="the-significance-of-urls">The Significance of URLs</h3>
+
+
+
+<p>In the upcoming lesson, we&#8217;ll delve into one of the core building blocks of the Web: URLs (Uniform Resource Locators). Understanding how URLs function is essential, as they play a pivotal role in navigating and accessing resources on the Web.</p>
+
+
+
+<p>As we continue our exploration, keep in mind the collaborative and open nature of the Web, fostering innovation and participation from individuals and communities worldwide. The browser, your virtual window to the digital realm, serves as a testament to the power of open standards in shaping our online experiences. Stay tuned for a deeper dive into the world of URLs in the next lesson.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/fullwidth/">Unveiling the Web Browser: Gateway to the World Wide Web</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/fullwidth/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Text Tags: Blocks, headings and Inlines a quick start ✍</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/html-text-tags-understanding-blocks-and-inlines/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/html-text-tags-understanding-blocks-and-inlines/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:27:56 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[HTML]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=12</guid>
+
+					<description><![CDATA[<p>In the world of HTML, text is a fundamental component, and understanding the various tags associated with it is crucial. In the body tag of...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/html-text-tags-understanding-blocks-and-inlines/">Text Tags: Blocks, headings and Inlines a quick start ✍</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In the world of HTML, text is a fundamental component, and understanding the various tags associated with it is crucial. In the body tag of an HTML document, you&#8217;ll often encounter two main categories of elements: block elements and inline elements.</p>
+
+
+
+<h3 class="wp-block-heading" id="block-elements-vs-inline-elements">Block Elements vs. Inline Elements</h3>
+
+
+
+<p>Before delving into specific tags, it&#8217;s essential to grasp the distinction between block and inline elements.</p>
+
+
+
+<ul>
+<li><strong>Block Elements:</strong> These include tags such as <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, heading elements (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>), lists, and list items. When positioned on a page, block elements do not permit other elements to be visualized next to them. They typically create a new &#8220;block&#8221; or section in the layout.</li>
+
+
+
+<li><strong>Inline Elements:</strong> On the other hand, inline elements, like the <code>&lt;span&gt;</code> tag, can sit next to other inline elements. Unlike block elements, inline elements allow content to flow alongside them. Moreover, inline elements can be contained within block elements, but the reverse is not true.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="the-p-tag-and-inline-elements">The <code>&lt;p&gt;</code> Tag and Inline Elements</h3>
+
+
+
+<p>Let&#8217;s explore the <code>&lt;p&gt;</code> tag, which defines a paragraph of text and is considered a block element:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;p&gt;Some text&lt;/p&gt;
+</code></pre>
+
+
+
+<p>The block aspect of the <code>&lt;p&gt;</code> tag becomes evident when the tag is placed on its own line. Within a <code>&lt;p&gt;</code> tag, you can include inline elements, such as the <code>&lt;span&gt;</code> tag:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;p&gt;A part of the text &lt;span&gt;and here another part&lt;/span&gt;&lt;/p&gt;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="heading-tags-h1-to-h6">Heading Tags (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>)</h3>
+
+
+
+<p>HTML provides six heading tags, ranging from <code>&lt;h1&gt;</code> (most important) to <code>&lt;h6&gt;</code> (least important). Typically, a page features one <code>&lt;h1&gt;</code> element, serving as the page title. Subsequent headings, like <code>&lt;h2&gt;</code> to <code>&lt;h6&gt;</code>, represent varying levels of importance. Browsers render <code>&lt;h1&gt;</code> larger by default, gradually decreasing the size as the heading level increases:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;h1&gt;h1&lt;/h1&gt;
+&lt;h2&gt;h2&lt;/h2&gt;
+&lt;h3&gt;h3&lt;/h3&gt;
+&lt;h4&gt;h4&lt;/h4&gt;
+&lt;h5&gt;h5&lt;/h5&gt;
+&lt;h6&gt;h6&lt;/h6&gt;
+&lt;p&gt;Paragraph&lt;/p&gt;
+</code></pre>
+
+
+
+<p>All heading tags are block elements and cannot contain other block elements. However, they can include inline elements, like <code>&lt;span&gt;</code> or <code>&lt;strong&gt;</code>.</p>
+
+
+
+<p>Understanding the distinction between block and inline elements, as well as the specific attributes of tags like <code>&lt;p&gt;</code> and heading tags, is foundational to creating well-structured HTML documents. As you continue your journey in web development, these insights will prove invaluable.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/html-text-tags-understanding-blocks-and-inlines/">Text Tags: Blocks, headings and Inlines a quick start ✍</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/html-text-tags-understanding-blocks-and-inlines/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Creating your first web page in pure HTML 🎉</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:20:08 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Guides]]></category>
+		<category><![CDATA[HTML]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=11</guid>
+
+					<description><![CDATA[<p>In our previous HTML example, we aimed to provide you with a quick overview to get you started. However, we need to delve deeper into...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/">Creating your first web page in pure HTML 🎉</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In our previous HTML example, we aimed to provide you with a quick overview to get you started. However, we need to delve deeper into the essential elements of a proper HTML file to ensure clarity and correctness.</p>
+
+
+
+<h3 class="wp-block-heading" id="lets-revisit-we-wrote-initially">Let&#8217;s revisit we wrote initially</h3>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;p&gt;A paragraph of text&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+
+
+<p>While this allowed us to create a functional HTML page, it lacked some fundamental elements necessary for a well-formed HTML document. Consider the following improved version:</p>
+
+
+
+<pre class="wp-block-code lang-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;A paragraph of text&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;First item&lt;/li&gt;
+      &lt;li&gt;Second item&lt;/li&gt;
+      &lt;li&gt;Third item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="now-lets-break-down-the-key-components">Now, let&#8217;s break down the key components</h3>
+
+
+
+<ul>
+<li><strong><code>&lt;!DOCTYPE html&gt;</code></strong>: This declaration, placed at the top, signals to the browser that the document is an HTML file.</li>
+
+
+
+<li><code><strong>&lt;html&gt;</strong></code>: The root element that wraps the entire HTML document. Inside it, you&#8217;ll find the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections.</li>
+
+
+
+<li><strong><code>&lt;head&gt;</code></strong>: This section contains meta-information about the document, such as the title, character set, linked stylesheets, and more. In this example, it&#8217;s left empty for simplicity.</li>
+
+
+
+<li><strong><code>&lt;body&gt;</code></strong>: The container for the visible elements of the page. It encompasses the content you want to display, including paragraphs, lists, images, and more.</li>
+</ul>
+
+
+
+<p>It&#8217;s crucial to note that an HTML document should have only one occurrence of the <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, and <code>&lt;head&gt;</code> elements.</p>
+
+
+
+<p>Additionally, notice the indentation used in this example. Each nested tag, such as <code>&lt;head&gt;</code> inside <code>&lt;html&gt;</code> or <code>&lt;ul&gt;</code> inside <code>&lt;body&gt;</code>, is indented for clarity. Indentation helps maintain a &#8220;tree structure,&#8221; making it easier to visually parse and understand the hierarchy of elements in an HTML file.</p>
+
+
+
+<p>Whether you prefer a 2-character or 4-character indentation (or tabs), consistency is key to ensuring a clean and organized HTML structure. Adopting a systematic approach will greatly enhance your ability to navigate and modify HTML files effectively.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/">Creating your first web page in pure HTML 🎉</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/understanding-html-the-foundation-of-the-web/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to insert data into your Table, the correct way</title>
+		<link>https://themes.estudiopatagon.com/wordpress/zento/how-to-insert-data-into-your-table/</link>
+					<comments>https://themes.estudiopatagon.com/wordpress/zento/how-to-insert-data-into-your-table/#respond</comments>
+		
+		<dc:creator><![CDATA[Jonathan Doe]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2024 20:15:00 +0000</pubDate>
+				<category><![CDATA[Databases]]></category>
+		<category><![CDATA[SQL]]></category>
+		<guid isPermaLink="false">https://themes.estudiopatagon.com/wordpress/zento/?p=19</guid>
+
+					<description><![CDATA[<p>After your table is already created, you can add multiple kind of information.. Let&#8217;s start You can now start adding data into it with the INSERT...</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/how-to-insert-data-into-your-table/">How to insert data into your Table, the correct way</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>After your table is already created, you can add multiple kind of information..</p>
+
+
+
+<h2 class="wp-block-heading">Let&#8217;s start</h2>
+
+
+
+<p>You can now start adding data into it with the <code><strong>INSERT INTO</strong></code> command:</p>
+
+
+
+<ol>
+<li>Inserting a single record:</li>
+</ol>
+
+
+
+<pre class="wp-block-code lang-sql"><code>INSERT INTO people VALUES (20, 'Tony');</code></pre>
+
+
+
+<ol start="2">
+<li>Inserting multiple records:</li>
+</ol>
+
+
+
+<pre class="wp-block-code lang-sql"><code>INSERT INTO people VALUES (57, 'Joe'), (8, 'Ruby');
+</code></pre>
+
+
+
+<ol start="3">
+<li>Inserting data into specific columns:</li>
+</ol>
+
+
+
+<pre class="wp-block-code lang-sql"><code>INSERT INTO people (name) VALUES ('Harry');</code></pre>
+
+
+
+<p>To execute these queries using <strong>TablePlus SQL</strong> editor, follow these steps:</p>
+
+
+
+<ol>
+<li>Open <strong>TablePlus </strong>and connect to your database.</li>
+
+
+
+<li>In the <strong>SQL editor</strong>, paste one of the provided queries.</li>
+
+
+
+<li>Select the query with your mouse.</li>
+
+
+
+<li>Click on <strong>&#8220;Run Current&#8221;</strong> to execute the query.</li>
+</ol>
+
+
+
+<p>After executing the queries, you can refresh the database view, click on the &#8220;people&#8221; table, and inspect its content. You&#8217;ll see the inserted data reflecting the changes made.</p>
+
+
+
+<h2 class="wp-block-heading">Conclusion</h2>
+
+
+
+<p>These <strong>INSERT INTO</strong> commands allow you to populate your database tables with the necessary data, providing a foundation for meaningful interactions and queries. Feel free to experiment with different values and combinations to familiarize yourself with the process of inserting data into a SQL database.</p>
+<p>The post <a href="https://themes.estudiopatagon.com/wordpress/zento/how-to-insert-data-into-your-table/">How to insert data into your Table, the correct way</a> appeared first on <a href="https://themes.estudiopatagon.com/wordpress/zento">Zento</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://themes.estudiopatagon.com/wordpress/zento/how-to-insert-data-into-your-table/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
